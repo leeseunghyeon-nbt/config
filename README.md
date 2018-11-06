@@ -23,4 +23,13 @@ My Mac config
         tg = tag -n
         df = diff
         br = branch
+        
+ 5. 
+[ -f "$HOME/.profile" ] && source "$HOME/.profile"
+[ -f "$HOME/.bashrc" ] && source "$HOME/.zshrc"
+[ -f "$HOME/.bashrc" ] && source "$HOME/.bash_aliases"
+
+alias docker_redis='docker exec -it redis /bin/bash'
+alias docker_couchbase='docker exec -it couchbase /bin/bash'
+alias ssh_sandbox='ssh -p 2201 devops@211.253.28.117'
 
